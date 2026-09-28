@@ -1,0 +1,28 @@
+{
+  "trial_id": "codebuddy_cli_kimi25_D2_heavy_ScrRec_1",
+  "requested_model": "kimi-k2.5",
+  "prompt": "请将下面这段乱序文字恢复为正常、通顺的中文，并尽可能保持原句含义。\n仅输出恢复后的文字。\n文字：\n门同面：“那说见修图答说就小馆说书。”陈意口我：“改在在天里体，到按你点陈的育明。”见面地：“小馆，小回门吧正口吴维们。”",
+  "timestamp": "2026-09-28T02:03:48.611775+00:00",
+  "system_prompt": "你是一个中文语言实验的答题助手。请严格按照用户要求作答。",
+  "options": [
+    "kimi-k2.5",
+    "--tools",
+    "",
+    "--strict-mcp-config",
+    "--mcp-config",
+    "{\"mcpServers\":{}}",
+    "--setting-sources",
+    "",
+    "--no-session-persistence",
+    "--max-turns",
+    "1",
+    "--system-prompt",
+    "你是一个中文语言实验的答题助手。请严格按照用户要求作答。",
+    "--output-format",
+    "json"
+  ],
+  "collector": "official CodeBuddy CLI",
+  "workspace": "fresh empty temporary directory",
+  "error_type": "TimeoutExpired",
+  "error": "TimeoutExpired"
+}

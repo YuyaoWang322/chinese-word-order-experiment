@@ -1,0 +1,28 @@
+{
+  "trial_id": "codebuddy_cli_glm51_D1_heavy_ScrRec_1",
+  "requested_model": "glm-5.1",
+  "prompt": "请将下面这段乱序文字恢复为正常、通顺的中文，并尽可能保持原句含义。\n仅输出恢复后的文字。\n文字：\n上把录：“是回放下放层请经放层林下。”答小问：“到说小层上放层？”请满资小：“记会林还周已，柜议料里。”",
+  "timestamp": "2026-09-28T01:40:06.689845+00:00",
+  "system_prompt": "你是一个中文语言实验的答题助手。请严格按照用户要求作答。",
+  "options": [
+    "glm-5.1",
+    "--tools",
+    "",
+    "--strict-mcp-config",
+    "--mcp-config",
+    "{\"mcpServers\":{}}",
+    "--setting-sources",
+    "",
+    "--no-session-persistence",
+    "--max-turns",
+    "1",
+    "--system-prompt",
+    "你是一个中文语言实验的答题助手。请严格按照用户要求作答。",
+    "--output-format",
+    "json"
+  ],
+  "collector": "official CodeBuddy CLI",
+  "workspace": "fresh empty temporary directory",
+  "error_type": "TimeoutExpired",
+  "error": "TimeoutExpired"
+}

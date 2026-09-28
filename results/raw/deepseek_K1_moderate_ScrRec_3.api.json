@@ -1,0 +1,46 @@
+{
+  "request": {
+    "model": "deepseek-flash",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请将下面这段乱序文字恢复为正常、通顺的中文，并尽可能保持原句含义。\n仅输出恢复后的文字。\n文字：\n植物通过光作用合制造有物机。这个过程需要光能，通常吸收二化碳氧并释放氧气。"
+      }
+    ],
+    "temperature": 0.7,
+    "max_tokens": 512
+  },
+  "response": {
+    "id": "f92f2e39-dd7b-4a24-8c91-cd6459630304",
+    "object": "chat.completion",
+    "created": 1790525766,
+    "model": "deepseek-flash",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "植物通过光合作用制造有机物。这个过程需要光能，通常吸收二氧化碳并释放氧气。",
+          "reasoning_content": "We need answer Chinese only. Need restore scrambled text. Original: \"植物通过光作用合制造有物机。这个过程需要光能，通常吸收二化碳氧并释放氧气。\" Need unscramble to normal Chinese. Likely: \"植物通过光合作用制造有机物。这个过程需要光能，通常吸收二氧化碳并释放氧气。\" Need output only restored text. Check exact: \"植物通过光作用合制造有物机。\" Words scrambled: 光合作用, 制造, 有机物. So \"植物通过光合作用制造有机物。\" Second: \"吸收二化碳氧\" => 二氧化碳. So final. Ensure no extra. "
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 86,
+      "completion_tokens": 152,
+      "total_tokens": 238,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 132
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 86
+    },
+    "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+  },
+  "collected_at": "2026-09-27T16:16:07.035820+00:00"
+}

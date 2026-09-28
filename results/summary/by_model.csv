@@ -1,0 +1,9 @@
+﻿model,task,n_planned,n_completed,n_scored,mean_score,success_rate,partial_rate,status
+codebuddy_cli_glm51,ScrQA,15,15,15,1,1.0,,已评分
+codebuddy_cli_glm51,ScrRec,15,15,15,1.866667,0.866667,0.133333,已评分
+codebuddy_cli_kimi25,ScrQA,15,15,15,0.8,0.8,,已评分
+codebuddy_cli_kimi25,ScrRec,15,15,15,2,1.0,0.0,已评分
+codebuddy_cli_minimax27,ScrQA,15,15,15,0.8,0.8,,已评分
+codebuddy_cli_minimax27,ScrRec,15,15,15,1.666667,0.8,0.066667,已评分
+deepseek,ScrQA,15,15,15,1,1.0,,已评分
+deepseek,ScrRec,15,15,15,1.8,0.866667,0.066667,已评分

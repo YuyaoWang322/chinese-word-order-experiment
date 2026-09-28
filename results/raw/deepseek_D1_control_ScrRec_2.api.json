@@ -1,0 +1,46 @@
+{
+  "request": {
+    "model": "deepseek-flash",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请将下面这段乱序文字恢复为正常、通顺的中文，并尽可能保持原句含义。\n仅输出恢复后的文字。\n文字：\n小林说：“请把会议记录放到资料柜里。”小周问：“放上层还是下层？”小林回答：“上层已经放满，请放下层。”"
+      }
+    ],
+    "temperature": 0.7,
+    "max_tokens": 512
+  },
+  "response": {
+    "id": "672247c2-2ae8-4f95-b9fe-3b417e392823",
+    "object": "chat.completion",
+    "created": 1790525504,
+    "model": "deepseek-flash",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "小林说：“请把会议记录放到资料柜里。”小周问：“放上层还是下层？”小林回答：“上层已经放满，请放下层。”",
+          "reasoning_content": "我们需要回答用户。用户中文要求：将下面乱序文字恢复为正常、通顺的中文，并尽可能保持原句含义。仅输出恢复后的文字。文字：\n小林说：“请把会议记录放到资料柜里。”小周问：“放上层还是下层？”小林回答：“上层已经放满，请放下层。”\n\n但这段看起来并不乱序？需要恢复为正常通顺。也许原句已经是正常顺序？需要检查是否\"乱序文字\"？ 给出的文字：\n小林说：“请把会议记录放到资料柜里。”小周问：“放上层还是下层？”小林回答：“上层已经放满，请放下层。”\n\n这已经是通顺对话。可能要求仅输出恢复后的文字。那就是原样？ 但可能有陷阱：文字已正常。需要输出恢复后的文字。不要解释。\n\n需要确认是否要调整标点？ 原句完全通顺。直接输出即可。但用户说乱序文字，可能其实是按对话逻辑已经排好？ 可能是让排序？ 内容顺序：小林请求，小周问，小林回答。正常。仅输出恢复后的文字。\n\n最终输出同样文字即可。 Ensure no extra. "
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 94,
+      "completion_tokens": 280,
+      "total_tokens": 374,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 246
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 94
+    },
+    "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+  },
+  "collected_at": "2026-09-27T16:11:45.962810+00:00"
+}

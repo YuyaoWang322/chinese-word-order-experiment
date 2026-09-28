@@ -1,0 +1,46 @@
+{
+  "request": {
+    "model": "deepseek-flash",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请根据下面的文字回答问题，严格遵守问题中的回答格式。\n文字：\n甲乙丙三人参加比赛，名次各不相同。甲的名次比乙靠前，丙的名次比甲靠前。请根据这些条件判断三人的先后顺序。\n问题：\n三人中谁的名次最靠前？仅回答甲、乙或丙。"
+      }
+    ],
+    "temperature": 0.7,
+    "max_tokens": 512
+  },
+  "response": {
+    "id": "c8aec4fd-38ab-4022-96d2-5ed5c40839ed",
+    "object": "chat.completion",
+    "created": 1790525544,
+    "model": "deepseek-flash",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "丙",
+          "reasoning_content": "我们需要回答中文问题。必须严格遵守格式，仅回答甲、乙或丙。条件：甲乙丙名次各不相同。甲比乙靠前，丙比甲靠前。因此顺序丙最靠前，甲中间，乙最后。问谁名次最靠前？丙。仅回答甲、乙或丙。最终只输出“丙”。"
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 99,
+      "completion_tokens": 76,
+      "total_tokens": 175,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 74
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 99
+    },
+    "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+  },
+  "collected_at": "2026-09-27T16:12:25.566983+00:00"
+}

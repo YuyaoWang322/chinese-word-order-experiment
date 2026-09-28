@@ -1,0 +1,46 @@
+{
+  "request": {
+    "model": "deepseek-flash",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请将下面这段乱序文字恢复为正常、通顺的中文，并尽可能保持原句含义。\n仅输出恢复后的文字。\n文字：\n小林说：“请把会议记录放到资料柜里。”小周问：“放上层还是下层？”小林回答：“上层已经放满，请放下层。”"
+      }
+    ],
+    "temperature": 0.7,
+    "max_tokens": 512
+  },
+  "response": {
+    "id": "82b755f6-bbec-4062-aecb-fc513fa5f421",
+    "object": "chat.completion",
+    "created": 1790525535,
+    "model": "deepseek-flash",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "小林说：“请把会议记录放到资料柜里。”小周问：“放上层还是下层？”小林回答：“上层已经放满，请放下层。”",
+          "reasoning_content": "我们需要回答用户。用户要求将“乱序文字”恢复为正常通顺中文，仅输出恢复后的文字。给出的文字看起来已经正常顺序？ 文字：小林说：“请把会议记录放到资料柜里。”小周问：“放上层还是下层？”小林回答：“上层已经放满，请放下层。” 这似乎没有乱序。可能用户希望恢复为正常中文，直接输出即可。需要仅输出恢复后的文字。不要解释。应该保持原句含义。可以稍微调整“资料柜”/“文件柜”？ 原句已经通顺。输出同样文字即可。注意要求仅输出恢复后的文字。 "
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 94,
+      "completion_tokens": 170,
+      "total_tokens": 264,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 136
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 94
+    },
+    "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+  },
+  "collected_at": "2026-09-27T16:12:16.690853+00:00"
+}

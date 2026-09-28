@@ -1,0 +1,46 @@
+{
+  "request": {
+    "model": "deepseek-flash",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请根据下面的文字回答问题，严格遵守问题中的回答格式。\n文字：\n氧化气物过机光作有收常释这。光吸通氧植物过要，需造并碳放通制程二个能合用。\n问题：\n文中植物进行光合作用通常吸收哪一种气体？仅回答气体名称。"
+      }
+    ],
+    "temperature": 0.7,
+    "max_tokens": 512
+  },
+  "response": {
+    "id": "7444f7cc-a210-4cac-b7eb-f00cc856ff88",
+    "object": "chat.completion",
+    "created": 1790525748,
+    "model": "deepseek-flash",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "二氧化碳",
+          "reasoning_content": "我们需要回答中文。需要严格遵守问题格式，仅回答气体名称。文字是乱序？ 文字：“氧化气物过机光作有收常释这。光吸通氧植物过要，需造并碳放通制程二个能合用。” 需要理解。问：文中植物进行光合作用通常吸收哪一种气体？仅回答气体名称。\n\n看起来文字被倒置/乱序？ 让我们分析。原句可能是：“植物进行光合作用通常吸收二氧化碳，并释放氧气。” 文中文字：“氧化气物过机光作有收常释这。光吸通氧植物过要，需造并碳放通制程二个能合用。” 让我重新排列？\n\n第一句：“氧化气物过机光作有收常释这。” 可能是“植物进行光合作用通常吸收二氧化碳，并释放氧气。” 但拆分不同。\n第二句：“光吸通氧植物过要，需造并碳放通制程二个能合用。” 也许“植物要通过光合作用吸收二氧化碳，并释放氧气，这个过程需要...”?\n\n问题明确：植物进行光合作用通常吸收哪一种气体？通常吸收二氧化碳。仅回答气体名称：二氧化碳。\n\n需要确保只回答气体名称，可能“二氧化碳”。 final only."
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 94,
+      "completion_tokens": 263,
+      "total_tokens": 357,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 261
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 94
+    },
+    "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+  },
+  "collected_at": "2026-09-27T16:15:49.489434+00:00"
+}

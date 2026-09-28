@@ -1,0 +1,14 @@
+{
+  "phase": "finished",
+  "updated_at": "2026-09-28T02:37:26.661167+00:00",
+  "completed": {
+    "deepseek": 144,
+    "codebuddy_cli_glm51": 85,
+    "codebuddy_cli_minimax27": 101,
+    "codebuddy_cli_kimi25": 89
+  },
+  "scope": "用户缩减为每正式模型30条，停止其余采集和重试",
+  "selected_per_model": 30,
+  "selected_total": 120,
+  "pending_cli": 0
+}

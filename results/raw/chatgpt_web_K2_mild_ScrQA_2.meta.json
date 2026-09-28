@@ -1,0 +1,9 @@
+{
+  "source": "manual",
+  "actual_model": "ChatGPT Latest / 6 Pro（后端版本未确认）",
+  "collected_at": "2026-09-27T16:30:53.886248+00:00",
+  "collector": "Codex browser UI",
+  "displayed_model": "Latest / 6 Pro",
+  "settings": "Unpersonalized temporary chat",
+  "evidence": "页面显示 ChatGPT said: 凝固；Response complete"
+}

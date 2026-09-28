@@ -1,0 +1,97 @@
+[
+  {
+    "name": "chatgpt_web",
+    "provider": "ChatGPT Web",
+    "mode": "manual",
+    "api_model": "ChatGPT Latest / 6 Pro（后端版本未确认）",
+    "model_label_source": "2026-09-28 实际网页菜单：Latest；Select model 显示 6 Pro；用户切换后要求开始测试",
+    "temperature": null,
+    "max_tokens": null,
+    "requested_model_label": "GPT6 astra"
+  },
+  {
+    "name": "deepseek",
+    "provider": "DeepSeek",
+    "mode": "api",
+    "api_model": "deepseek-flash",
+    "base_url": "https://api.deepseek.com",
+    "api_key_env": "DEEPSEEK_API_KEY",
+    "temperature": 0.7,
+    "max_tokens": 512
+  },
+  {
+    "name": "workbuddy_hy4",
+    "provider": "WorkBuddy desktop",
+    "mode": "manual",
+    "api_model": "Hy4 preview",
+    "temperature": null,
+    "max_tokens": null,
+    "model_label_source": "WorkBuddy 5.5.6 模型选择菜单；平台标签，后端版本未独立核验",
+    "settings": "Working; Max Mode off; independent new task; no experiment workspace attached",
+    "collection_status": "暂停：用户改用官方CLI可用模型；保留已有界面预试验"
+  },
+  {
+    "name": "workbuddy_glm53flash",
+    "provider": "WorkBuddy desktop",
+    "mode": "manual",
+    "api_model": "GLM-5.3-Flash",
+    "temperature": null,
+    "max_tokens": null,
+    "model_label_source": "WorkBuddy 5.5.6 模型选择菜单；平台标签，后端版本未独立核验",
+    "settings": "Working; Max Mode off; independent new task; no experiment workspace attached",
+    "collection_status": "暂停：用户改用官方CLI可用模型；保留已有界面预试验"
+  },
+  {
+    "name": "workbuddy_minimaxm3",
+    "provider": "WorkBuddy desktop",
+    "mode": "manual",
+    "api_model": "MiniMax-M3",
+    "temperature": null,
+    "max_tokens": null,
+    "model_label_source": "WorkBuddy 5.5.6 模型选择菜单；平台标签，后端版本未独立核验",
+    "settings": "Working; Max Mode off; independent new task; no experiment workspace attached",
+    "collection_status": "暂停：用户改用官方CLI可用模型；保留已有界面预试验"
+  },
+  {
+    "name": "codebuddy_cli_glm51",
+    "provider": "WorkBuddy bundled CodeBuddy CLI",
+    "mode": "cli",
+    "api_model": "glm-5.1",
+    "temperature": null,
+    "max_tokens": null,
+    "model_label_source": "官方CLI服务列表及逐次响应providerData.model核验",
+    "settings": "independent process; tools disabled; strict empty MCP; empty workspace; fixed custom system prompt",
+    "system_prompt": "你是一个中文语言实验的答题助手。请严格按照用户要求作答。",
+    "collection_status": "主要扩展实验",
+    "tools_enabled": false,
+    "session_persistence": false
+  },
+  {
+    "name": "codebuddy_cli_minimax27",
+    "provider": "WorkBuddy bundled CodeBuddy CLI",
+    "mode": "cli",
+    "api_model": "minimax-m2.7",
+    "temperature": null,
+    "max_tokens": null,
+    "model_label_source": "官方CLI服务列表及逐次响应providerData.model核验",
+    "settings": "independent process; tools disabled; strict empty MCP; empty workspace; fixed custom system prompt",
+    "system_prompt": "你是一个中文语言实验的答题助手。请严格按照用户要求作答。",
+    "collection_status": "主要扩展实验",
+    "tools_enabled": false,
+    "session_persistence": false
+  },
+  {
+    "name": "codebuddy_cli_kimi25",
+    "provider": "WorkBuddy bundled CodeBuddy CLI",
+    "mode": "cli",
+    "api_model": "kimi-k2.5",
+    "temperature": null,
+    "max_tokens": null,
+    "model_label_source": "官方CLI服务列表及逐次响应providerData.model核验",
+    "settings": "independent process; tools disabled; strict empty MCP; empty workspace; fixed custom system prompt",
+    "system_prompt": "你是一个中文语言实验的答题助手。请严格按照用户要求作答。",
+    "collection_status": "主要扩展实验",
+    "tools_enabled": false,
+    "session_persistence": false
+  }
+]

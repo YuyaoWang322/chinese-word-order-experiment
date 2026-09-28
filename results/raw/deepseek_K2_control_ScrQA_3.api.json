@@ -1,0 +1,46 @@
+{
+  "request": {
+    "model": "deepseek-flash",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请根据下面的文字回答问题，严格遵守问题中的回答格式。\n文字：\n在标准大气压下，纯水冷却到零摄氏度时可以结冰。水从液态转变为固态，这个过程称为凝固。\n问题：\n文中水从液态转变为固态的过程叫什么？仅回答过程名称。"
+      }
+    ],
+    "temperature": 0.7,
+    "max_tokens": 512
+  },
+  "response": {
+    "id": "47e6d77b-881b-42b9-b5a7-364c737df189",
+    "object": "chat.completion",
+    "created": 1790525526,
+    "model": "deepseek-flash",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "凝固",
+          "reasoning_content": "我们需要回答中文问题。需要严格遵守格式：仅回答过程名称。文中说这个过程称为凝固。所以回答“凝固”。确保仅过程名称。"
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 85,
+      "completion_tokens": 32,
+      "total_tokens": 117,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 30
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 85
+    },
+    "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+  },
+  "collected_at": "2026-09-27T16:12:06.573016+00:00"
+}

@@ -1,0 +1,46 @@
+{
+  "request": {
+    "model": "deepseek-flash",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请将下面这段乱序文字恢复为正常、通顺的中文，并尽可能保持原句含义。\n仅输出恢复后的文字。\n文字：\n三个盒子分别标记为甲、乙、丙，只有一个盒子装有钥匙。已知钥匙不在甲盒，也不在丙盒。这些信息全部真靠可实。"
+      }
+    ],
+    "temperature": 0.7,
+    "max_tokens": 512
+  },
+  "response": {
+    "id": "5ef79006-39e3-443e-ade0-74f015bca198",
+    "object": "chat.completion",
+    "created": 1790525719,
+    "model": "deepseek-flash",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "三个盒子分别标记为甲、乙、丙，只有一个盒子装有钥匙。已知钥匙不在甲盒，也不在丙盒。这些信息全部真实可靠。",
+          "reasoning_content": "我们需要回答用户。需要将乱序文字恢复为正常、通顺中文，尽可能保持原句含义。仅输出恢复后的文字。文字：\n“三个盒子分别标记为甲、乙、丙，只有一个盒子装有钥匙。已知钥匙不在甲盒，也不在丙盒。这些信息全部真靠可实。”\n\n需要恢复乱序？ 看最后“这些信息全部真靠可实” 乱序，应为“这些信息全部真实可靠” 或“这些信息全部可靠真实”？ 原句含义：这些信息全部真实可靠。 正常通顺：三个盒子分别标记为甲、乙、丙，只有一个盒子装有钥匙。已知钥匙不在甲盒，也不在丙盒。这些信息全部真实可靠。 需要仅输出恢复后的文字。 检查是否有其他乱序？ “真靠可实” -> 真实可靠。 其他句子通顺。 可能“只有一个盒子装有钥匙” and “已知钥匙不在甲盒，也不在丙盒” -> implies in 乙. But no need add? 恢复后文字即可。 原文“这些信息全部真靠可实” 排序为“这些信息全部真实可靠”。 输出。 "
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 96,
+      "completion_tokens": 283,
+      "total_tokens": 379,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 249
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 96
+    },
+    "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+  },
+  "collected_at": "2026-09-27T16:15:21.274225+00:00"
+}

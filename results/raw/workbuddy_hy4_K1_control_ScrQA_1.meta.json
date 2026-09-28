@@ -1,0 +1,10 @@
+{
+  "source": "manual",
+  "actual_model": "Hy4 preview",
+  "collected_at": "2026-09-28T01:32:49.115Z",
+  "collector": "Codex WorkBuddy native UI",
+  "platform": "WorkBuddy 5.5.6",
+  "settings": "Working; Max Mode off; independent new task; no experiment workspace attached",
+  "evidence": "UI Completed marker; assistant Copy button pasted into unsent composer for exact text capture",
+  "prompt": "请根据下面的文字回答问题，严格遵守问题中的回答格式。\n文字：\n植物通过光合作用制造有机物。这个过程需要光能，通常吸收二氧化碳并释放氧气。\n问题：\n文中植物进行光合作用通常吸收哪一种气体？仅回答气体名称。"
+}

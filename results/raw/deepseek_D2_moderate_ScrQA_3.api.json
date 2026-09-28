@@ -1,0 +1,46 @@
+{
+  "request": {
+    "model": "deepseek-flash",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请根据下面的文字回答问题，严格遵守问题中的回答格式。\n文字：\n小陈说：“明天我们在图书馆门口见面。”小吴回答：“那里正在维修，改到体育馆门口吧。”小陈说：“同意，就按你说的地点见面。”\n问题：\n两人最终约定在哪个建筑的门口见面？仅回答建筑名称。"
+      }
+    ],
+    "temperature": 0.7,
+    "max_tokens": 512
+  },
+  "response": {
+    "id": "e020f672-12f5-4bd1-baad-2cfee2020703",
+    "object": "chat.completion",
+    "created": 1790525541,
+    "model": "deepseek-flash",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "体育馆",
+          "reasoning_content": "我们需要回答中文问题。需要严格遵守格式，仅回答建筑名称。阅读文字：小陈最初图书馆，小吴说那里维修，改到体育馆门口，小陈同意。最终约定体育馆门口。问哪个建筑的门口见面？仅回答建筑名称。应该回答“体育馆”。不要“体育馆门口”？问建筑名称，仅回答建筑名称。所以“体育馆”。"
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 96,
+      "completion_tokens": 78,
+      "total_tokens": 174,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 76
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 96
+    },
+    "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+  },
+  "collected_at": "2026-09-27T16:12:21.853604+00:00"
+}

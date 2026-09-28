@@ -1,0 +1,46 @@
+{
+  "request": {
+    "model": "deepseek-flash",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请将下面这段乱序文字恢复为正常、通顺的中文，并尽可能保持原句含义。\n仅输出恢复后的文字。\n文字：\n小林说：“请把会议记录放到资料柜里。”小周问：“放上层还是下层？”小林回答：“上层已经放满，请放下层。”"
+      }
+    ],
+    "temperature": 0.7,
+    "max_tokens": 512
+  },
+  "response": {
+    "id": "0091ef0a-9689-4f80-82d1-e5c3e49aa0ae",
+    "object": "chat.completion",
+    "created": 1790525590,
+    "model": "deepseek-flash",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "小林说：“请把会议记录放到资料柜里。”小周问：“放上层还是下层？”小林回答：“上层已经放满，请放下层。”",
+          "reasoning_content": "我们需要回答用户。需要将乱序文字恢复为正常通顺中文，并尽可能保持原句含义。仅输出恢复后的文字。给出的文字看起来已经通顺？ \"小林说：“请把会议记录放到资料柜里。”小周问：“放上层还是下层？”小林回答：“上层已经放满，请放下层。”\" 这已经正常顺序。也许用户要求乱序文字恢复，但这段没有乱序？可能需要仅输出原句？ 但要注意可能是“乱序”指句子顺序？ 读起来顺畅。 会议记录放到资料柜里。问放上层还是下层。答上层已满，放下层。 正常。 直接输出这段文字即可。 需要仅输出恢复后的文字。 不加解释。\n\n但是要检查是否有标点或语序需要调整？“请把会议记录放到资料柜里。” 小周问：“放上层还是下层？” 小林回答：“上层已经放满，请放下层。” 可以。\n\n最终直接输出。 "
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 94,
+      "completion_tokens": 244,
+      "total_tokens": 338,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 210
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 94
+    },
+    "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+  },
+  "collected_at": "2026-09-27T16:13:11.933787+00:00"
+}

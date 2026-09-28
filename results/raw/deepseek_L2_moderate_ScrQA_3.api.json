@@ -1,0 +1,46 @@
+{
+  "request": {
+    "model": "deepseek-flash",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请根据下面的文字回答问题，严格遵守问题中的回答格式。\n文字：\n三个盒子分别标记为甲、乙、丙，只有一个盒子装有钥匙。已知钥匙不在甲盒，也不在丙盒。这些信息全部真靠可实。\n问题：\n钥匙在哪个盒子？仅回答甲、乙或丙。"
+      }
+    ],
+    "temperature": 0.7,
+    "max_tokens": 512
+  },
+  "response": {
+    "id": "69e76f5a-3aae-40d1-b696-a277b55e91f7",
+    "object": "chat.completion",
+    "created": 1790525466,
+    "model": "deepseek-flash",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "乙",
+          "reasoning_content": "我们需要回答中文。要求严格格式，仅回答甲、乙或丙。根据文字：只有一个盒子有钥匙，已知不在甲也不在丙。所以只可能在乙。回答“乙”。需要仅回答。"
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 94,
+      "completion_tokens": 46,
+      "total_tokens": 140,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 44
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 94
+    },
+    "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+  },
+  "collected_at": "2026-09-27T16:11:07.324758+00:00"
+}

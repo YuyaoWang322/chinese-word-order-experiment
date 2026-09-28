@@ -1,0 +1,11 @@
+.env
+.env.*
+__pycache__/
+*.pyc
+
+# Local temporary files and credentials
+.DS_Store
+*.tmp
+*.sqlite3-wal
+*.sqlite3-shm
+.venv/

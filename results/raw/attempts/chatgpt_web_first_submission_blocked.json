@@ -1,0 +1,10 @@
+{
+  "trial_id": "chatgpt_web_K2_mild_ScrQA_2",
+  "timestamp": "2026-09-27T16:23:36.474388+00:00",
+  "source": "browser_ui",
+  "error_type": "CloudflareVerificationPage",
+  "displayed_model": "Latest / 6 Pro",
+  "personalization": "Unpersonalized temporary chat",
+  "model_response_received": false,
+  "note": "提交固定提示词后，页面 alert 显示 Cloudflare managed challenge HTML，存在 Retry 按钮；未重试，不记录为模型输出或评分。"
+}

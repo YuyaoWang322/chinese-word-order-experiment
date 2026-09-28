@@ -1,0 +1,46 @@
+{
+  "request": {
+    "model": "deepseek-flash",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请将下面这段乱序文字恢复为正常、通顺的中文，并尽可能保持原句含义。\n仅输出恢复后的文字。\n文字：\n植物通过光合作用制造有机物。这个过程需要光能，通常吸收二氧化碳并释放氧气。"
+      }
+    ],
+    "temperature": 0.7,
+    "max_tokens": 512
+  },
+  "response": {
+    "id": "9bbe5a43-cb6f-4c1f-8398-e466c4e23fc9",
+    "object": "chat.completion",
+    "created": 1790525724,
+    "model": "deepseek-flash",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "植物通过光合作用制造有机物，这个过程需要光能，通常吸收二氧化碳并释放氧气。",
+          "reasoning_content": "我们需要回答用户中文请求。用户说“请将下面这段乱序文字恢复为正常、通顺的中文，并尽可能保持原句含义。仅输出恢复后的文字。文字：植物通过光合作用制造有机物。这个过程需要光能，通常吸收二氧化碳并释放氧气。”\n\n需要判断这段文字是否乱序？看起来已经正常通顺。可能要求恢复乱序，但给的内容已经正常？也许需要仅输出恢复后的文字。应直接输出原句？ 需要小心：也许句子有逻辑顺序：植物通过光合作用制造有机物。这个过程需要光能，通常吸收二氧化碳并释放氧气。这已经正常。但“通常吸收二氧化碳并释放氧气”主语可能是植物/过程。可以稍微调整：植物通过光合作用制造有机物，这个过程需要光能，通常吸收二氧化碳并释放氧气。或者“植物通过光合作用制造有机物，这个过程需要光能，通常吸收二氧化碳并释放氧气。” 保持原含义。仅输出恢复后的文字。\n\n需要可能要恢复为正常通顺中文，但原句已经正常。输出相同或微调。要求仅输出恢复后的文字，不要解释。最终应只输出一句。可以保留原标点。 Maybe \"植物通过光合作用制造有机物，这个过程需要光能，通常吸收二氧化碳并释放氧气。\" 与原句几乎一样。如果原文不是乱序，就不改动太多。仅输出。 "
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 80,
+      "completion_tokens": 306,
+      "total_tokens": 386,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 286
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 80
+    },
+    "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+  },
+  "collected_at": "2026-09-27T16:15:25.424171+00:00"
+}

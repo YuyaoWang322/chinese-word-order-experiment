@@ -1,0 +1,46 @@
+{
+  "request": {
+    "model": "deepseek-flash",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请根据下面的文字回答问题，严格遵守问题中的回答格式。\n文字：\n植物通过光合作用制造有机物。这个过程需要光能，通常吸收二氧化碳并释放氧气。\n问题：\n文中植物进行光合作用通常吸收哪一种气体？仅回答气体名称。"
+      }
+    ],
+    "temperature": 0.7,
+    "max_tokens": 512
+  },
+  "response": {
+    "id": "8e3f11fa-bb1b-4ed3-98de-fc903b8704a5",
+    "object": "chat.completion",
+    "created": 1790525572,
+    "model": "deepseek-flash",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "二氧化碳",
+          "reasoning_content": "我们需要回答中文。问题：文中植物进行光合作用通常吸收哪一种气体？仅回答气体名称。文字明确吸收二氧化碳。需要仅回答气体名称。所以：二氧化碳。确保没有标点？可以。"
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 80,
+      "completion_tokens": 45,
+      "total_tokens": 125,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 43
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 80
+    },
+    "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+  },
+  "collected_at": "2026-09-27T16:12:53.463226+00:00"
+}

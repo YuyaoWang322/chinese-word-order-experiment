@@ -1,0 +1,28 @@
+{
+  "trial_id": "codebuddy_cli_kimi25_L1_heavy_ScrRec_2",
+  "requested_model": "kimi-k2.5",
+  "prompt": "请将下面这段乱序文字恢复为正常、通顺的中文，并尽可能保持原句含义。\n仅输出恢复后的文字。\n文字：\n名不次次甲名参些请，比丙人比人的。前三次件甲靠后相，乙丙据的先条顺加。同前比的断三靠序这判名各根乙赛甲。",
+  "timestamp": "2026-09-28T02:06:18.152472+00:00",
+  "system_prompt": "你是一个中文语言实验的答题助手。请严格按照用户要求作答。",
+  "options": [
+    "kimi-k2.5",
+    "--tools",
+    "",
+    "--strict-mcp-config",
+    "--mcp-config",
+    "{\"mcpServers\":{}}",
+    "--setting-sources",
+    "",
+    "--no-session-persistence",
+    "--max-turns",
+    "1",
+    "--system-prompt",
+    "你是一个中文语言实验的答题助手。请严格按照用户要求作答。",
+    "--output-format",
+    "json"
+  ],
+  "collector": "official CodeBuddy CLI",
+  "workspace": "fresh empty temporary directory",
+  "error_type": "TimeoutExpired",
+  "error": "TimeoutExpired"
+}

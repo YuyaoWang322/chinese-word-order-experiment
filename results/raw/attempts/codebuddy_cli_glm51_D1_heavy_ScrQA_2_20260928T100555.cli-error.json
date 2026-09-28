@@ -1,0 +1,28 @@
+{
+  "trial_id": "codebuddy_cli_glm51_D1_heavy_ScrQA_2",
+  "requested_model": "glm-5.1",
+  "prompt": "请根据下面的文字回答问题，严格遵守问题中的回答格式。\n文字：\n上把录：“是回放下放层请经放层林下。”答小问：“到说小层上放层？”请满资小：“记会林还周已，柜议料里。”\n问题：\n按小林最后的要求，会议记录应该放在资料柜哪一层？仅回答上层或下层。",
+  "timestamp": "2026-09-28T02:01:55.432364+00:00",
+  "system_prompt": "你是一个中文语言实验的答题助手。请严格按照用户要求作答。",
+  "options": [
+    "glm-5.1",
+    "--tools",
+    "",
+    "--strict-mcp-config",
+    "--mcp-config",
+    "{\"mcpServers\":{}}",
+    "--setting-sources",
+    "",
+    "--no-session-persistence",
+    "--max-turns",
+    "1",
+    "--system-prompt",
+    "你是一个中文语言实验的答题助手。请严格按照用户要求作答。",
+    "--output-format",
+    "json"
+  ],
+  "collector": "official CodeBuddy CLI",
+  "workspace": "fresh empty temporary directory",
+  "error_type": "TimeoutExpired",
+  "error": "TimeoutExpired"
+}

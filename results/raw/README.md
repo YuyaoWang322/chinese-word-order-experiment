@@ -1,0 +1,1 @@
+人工结果：每条回答保存为 UTF-8 文件 `<trial_id>.txt`，仅放真实模型回答；不要放“待测试”等占位符。必须另建同名 `.meta.json`，包含 source（manual）、actual_model、collected_at、collector。import-manual 会校验元数据及模型标识。不要创建空白回答文件。API 原始响应保存为 `<trial_id>.api.json`。

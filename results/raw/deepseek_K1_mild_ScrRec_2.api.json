@@ -1,0 +1,46 @@
+{
+  "request": {
+    "model": "deepseek-flash",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请将下面这段乱序文字恢复为正常、通顺的中文，并尽可能保持原句含义。\n仅输出恢复后的文字。\n文字：\n植物通过光合作用制造有机物。这个过程需要光能，通常吸收二氧化碳并释放氧气。"
+      }
+    ],
+    "temperature": 0.7,
+    "max_tokens": 512
+  },
+  "response": {
+    "id": "69ac7614-8d02-4f8d-bf1d-ec4c83681042",
+    "object": "chat.completion",
+    "created": 1790525774,
+    "model": "deepseek-flash",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "植物通过光合作用制造有机物。这个过程需要光能，通常吸收二氧化碳并释放氧气。",
+          "reasoning_content": "我们需要回答用户。需要“将下面这段乱序文字恢复为正常、通顺的中文，并尽可能保持原句含义。仅输出恢复后的文字。文字：植物通过光合作用制造有机物。这个过程需要光能，通常吸收二氧化碳并释放氧气。”\n\n需要判断是否乱序？给出的文字似乎已经是正常通顺中文。也许用户要求恢复乱序，但这里原文本身就是通顺。可能只是需要输出恢复后的文字。注意“仅输出恢复后的文字”。所以直接输出同样文字？需要不要额外说明。可能可以稍微调整更通顺？ 原句：植物通过光合作用制造有机物。这个过程需要光能，通常吸收二氧化碳并释放氧气。 这已经正常。 但“通常吸收二氧化碳并释放氧气”的主语？ 这个过程需要光能，通常吸收二氧化碳并释放氧气。 可理解为光合作用过程通常吸收二氧化碳并释放氧气。 通顺。 可能乱序文字并不是乱序。 所以输出：\n植物通过光合作用制造有机物。这个过程需要光能，通常吸收二氧化碳并释放氧气。\n但“通常”也许应改为“并且”？ 保持原句含义尽可能。 如果恢复为正常通顺：植物通过光合作用制造有机物。这个过程需要光能，通常吸收二氧化碳并释放氧气。 可以。 确保仅输出恢复后的文字，无 Markdown。最终。 "
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 80,
+      "completion_tokens": 304,
+      "total_tokens": 384,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 284
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 80
+    },
+    "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+  },
+  "collected_at": "2026-09-27T16:16:15.961108+00:00"
+}

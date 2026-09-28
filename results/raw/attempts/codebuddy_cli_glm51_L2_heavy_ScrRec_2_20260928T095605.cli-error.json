@@ -1,0 +1,28 @@
+{
+  "trial_id": "codebuddy_cli_glm51_L2_heavy_ScrRec_2",
+  "requested_model": "glm-5.1",
+  "prompt": "请将下面这段乱序文字恢复为正常、通顺的中文，并尽可能保持原句含义。\n仅输出恢复后的文字。\n文字：\n盒记有匙可不靠子盒些、别、全，钥盒甲实在知在为不子。只标丙甲个部一乙，个已这也匙。真息钥盒信装三丙有分。",
+  "timestamp": "2026-09-28T01:52:05.080427+00:00",
+  "system_prompt": "你是一个中文语言实验的答题助手。请严格按照用户要求作答。",
+  "options": [
+    "glm-5.1",
+    "--tools",
+    "",
+    "--strict-mcp-config",
+    "--mcp-config",
+    "{\"mcpServers\":{}}",
+    "--setting-sources",
+    "",
+    "--no-session-persistence",
+    "--max-turns",
+    "1",
+    "--system-prompt",
+    "你是一个中文语言实验的答题助手。请严格按照用户要求作答。",
+    "--output-format",
+    "json"
+  ],
+  "collector": "official CodeBuddy CLI",
+  "workspace": "fresh empty temporary directory",
+  "error_type": "TimeoutExpired",
+  "error": "TimeoutExpired"
+}

@@ -1,0 +1,46 @@
+{
+  "request": {
+    "model": "deepseek-flash",
+    "messages": [
+      {
+        "role": "user",
+        "content": "请将下面这段乱序文字恢复为正常、通顺的中文，并尽可能保持原句含义。\n仅输出恢复后的文字。\n文字：\n小陈说：“明天我们在图书馆门口见面。”小吴回答：“那里正在维修，改到体育馆门口吧。”小陈说：“同意，就按你说的地点见面。”"
+      }
+    ],
+    "temperature": 0.7,
+    "max_tokens": 512
+  },
+  "response": {
+    "id": "c8575f39-ea5e-4f7c-b068-da7abbf97fe0",
+    "object": "chat.completion",
+    "created": 1790525478,
+    "model": "deepseek-flash",
+    "choices": [
+      {
+        "index": 0,
+        "message": {
+          "role": "assistant",
+          "content": "小陈说：“明天我们在图书馆门口见面。”小吴回答：“那里正在维修，改到体育馆门口吧。”小陈说：“同意，就按你说的地点见面。”",
+          "reasoning_content": "我们需要回答用户。用户要求将“乱序文字恢复为正常、通顺的中文，并尽可能保持原句含义。仅输出恢复后的文字。” 给出的文字其实看起来已经是正常顺序？ 小陈说：“明天我们在图书馆门口见面。”小吴回答：“那里正在维修，改到体育馆门口吧。”小陈说：“同意，就按你说的地点见面。” 这已经是通顺中文。可能用户期望恢复乱序？ 但文本没有乱序。我们只需输出原句，可能略作通顺？ 注意“乱序文字”可能是指句子顺序？ 读起来：小陈提议图书馆，小吴说维修改体育馆，小陈同意。完全通顺。所以直接输出即可。仅输出恢复后的文字。不要额外解释。需要注意标点保持一致。 可以输出：\n小陈说：“明天我们在图书馆门口见面。”小吴回答：“那里正在维修，改到体育馆门口吧。”小陈说：“同意，就按你说的地点见面。”\nMaybe \"改到体育馆门口吧\" 可能“那里”指图书馆门口。没问题。\n\n需要仅输出恢复后的文字。 final no quotes? 应直接输出。 "
+        },
+        "logprobs": null,
+        "finish_reason": "stop"
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 97,
+      "completion_tokens": 281,
+      "total_tokens": 378,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      },
+      "completion_tokens_details": {
+        "reasoning_tokens": 244
+      },
+      "prompt_cache_hit_tokens": 0,
+      "prompt_cache_miss_tokens": 97
+    },
+    "system_fingerprint": "aeb56401ca74e127821c4f9126dcb669"
+  },
+  "collected_at": "2026-09-27T16:11:20.098503+00:00"
+}

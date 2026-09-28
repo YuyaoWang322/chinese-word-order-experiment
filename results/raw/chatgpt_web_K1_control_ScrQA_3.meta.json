@@ -1,0 +1,10 @@
+{
+  "source": "manual",
+  "actual_model": "ChatGPT Latest / 6 Pro（后端版本未确认）",
+  "collected_at": "2026-09-27T16:34:47.819Z",
+  "collector": "Codex browser UI",
+  "displayed_model": "Latest / 6 Pro",
+  "settings": "Unpersonalized temporary chat",
+  "url": "https://chatgpt.com/c/6ab9459e-fa88-83ea-b3fc-5feeaf440303?temporary-chat=true",
+  "evidence": "已观察到最终回答与完成控件，逐次独立请求"
+}

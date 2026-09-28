@@ -1,0 +1,10 @@
+{
+  "source": "manual",
+  "actual_model": "MiniMax-M3",
+  "collected_at": "2026-09-28T01:34:12.465Z",
+  "collector": "Codex WorkBuddy native UI",
+  "platform": "WorkBuddy 5.5.6",
+  "settings": "Working; Max Mode off; independent new task; no experiment workspace attached",
+  "evidence": "UI Completed marker; assistant Copy button pasted into unsent composer for exact text capture",
+  "prompt": "请将下面这段乱序文字恢复为正常、通顺的中文，并尽可能保持原句含义。\n仅输出恢复后的文字。\n文字：\n植物通过光合作用制造有机物。这个过程需要光能，通常吸收二氧化碳并释放氧气。"
+}
